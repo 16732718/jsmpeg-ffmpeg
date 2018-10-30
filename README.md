@@ -20,9 +20,8 @@ jsmpeg&amp;ffmpeg study
 
 ## 2. 使用FFmpeg
 ```
-1.将MP4视频文件考入解压目录
-2.在该目录打开命令行
-3.运行 ffmpeg -i in.mp4 -f mpegts \-codec:v mpeg1video -s 640x1236 -b:v 3000k -r 30 -bf 0 \-codec:a mp2 -ar 44100 -ac 1 -b:a 128k \out.ts
+1.在视频源文件目录打开命令行
+2.运行 ffmpeg -i in.mp4 -f mpegts \-codec:v mpeg1video -s 640x1236 -b:v 3000k -r 30 -bf 0 \-codec:a mp2 -ar 44100 -ac 1 -b:a 128k \out.ts
   in.mp4为视频源文件（可自定义）
   out.ts为导出后的文件名称（可自定义）
   640x1236为视频宽高
